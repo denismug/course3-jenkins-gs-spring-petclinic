@@ -19,7 +19,7 @@ pipeline {
     }
     
     post {
-        regression {
+        always {
             //email body
             emailext body: '${env.BUILD_URL}\n${currentBuild.absoluteURL}', 
             to: 'denis.mugisha@akelius.com',
