@@ -22,7 +22,7 @@ pipeline {
         always {
             //email body
             emailext body: '${env.BUILD_URL}\n${currentBuild.absoluteURL}', 
-            to: 'denis.mugisha@akelius.com',
+            to: 'denisjc7@gmail.com',
             recipientProviders: [previous()], 
             subject: '"${currentBuild.currentResutl}: Job ${env.JOB_NAME} [${env.BUILD_NUMBER}]'
         }
